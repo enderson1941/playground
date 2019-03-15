@@ -84,7 +84,7 @@ int main()
     fa_l->rightnode = fa_l_r;
     fa_r->leftnode = fa_r_l;
     fa_r->rightnode = fa_r_r;
-
+    
     cout<<"inorder:"<<endl;
     OutputTree(fa, 0);
     cout<< "end\n" << endl;
