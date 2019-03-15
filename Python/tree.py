@@ -116,7 +116,7 @@ def tree(n, l):
 
 bgcolor(0.5, 0.5, 0.5) # 背景色
 ht() # 隐藏turtle
-speed(0) # 速度，1-10渐进，0最快
+speed(5) # 速度，1-10渐进，0最快
 tracer(0, 0)
 pu() # 抬笔
 backward(100)
@@ -124,7 +124,10 @@ left(90) # 左转90度
 pu() # 抬笔
 backward(300) # 后退300
 tree(12, 100) # 递归7层
+ts = getscreen()
+ts.getcanvas().postscript(file="tree.eps")
 done()
+
 
 
 
