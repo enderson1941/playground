@@ -28,29 +28,30 @@ void OutputTree(BTnode* root, int mode)
     {
         return;
     }
-    switch (mode) {
-    case 0://inorder traversal
+    switch (mode)
+    {
+        case 0://inorder traversal
         {
             cout <<  root->value << " -> ";
             OutputTree(root->leftnode, mode);
             OutputTree(root->rightnode, mode);
             break;
         }
-    case 1://preorder traversal
+        case 1://preorder traversal
         {
             OutputTree(root->leftnode, mode);
             cout <<  root->value << " -> ";
             OutputTree(root->rightnode, mode);
             break;
         }
-    case 2://postorder traversal
+        case 2://postorder traversal
         {
             OutputTree(root->leftnode, mode);
             OutputTree(root->rightnode, mode);
             cout <<  root->value << " -> ";
             break;
         }
-    case 3://reverse tree
+        case 3://reverse tree
         {
             root = ReverseTree(root);
             OutputTree(root, 1);
@@ -84,7 +85,7 @@ int main()
     fa_l->rightnode = fa_l_r;
     fa_r->leftnode = fa_r_l;
     fa_r->rightnode = fa_r_r;
-    
+
     cout<<"inorder:"<<endl;
     OutputTree(fa, 0);
     cout<< "end\n" << endl;
