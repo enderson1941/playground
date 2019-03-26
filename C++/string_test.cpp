@@ -22,5 +22,6 @@ int main()
     // string st = "abc";
     std::string st;
     cin >> st;
+    cout << st << endl;
     return 0;
 }

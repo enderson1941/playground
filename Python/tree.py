@@ -1,6 +1,11 @@
-from math import *
+import random
+import turtle
+import math
+
 from random import *
+from time import sleep
 from turtle import *
+from math import *
 
 # def tree(n, l):
 #     pd()
@@ -36,22 +41,6 @@ from turtle import *
 # backward(300)
 # tree(13, 100)
 # done()
-
-
-# 作者：默然
-# 链接：https://www.zhihu.com/question/271643290/answer/527766693
-# 来源：知乎
-# 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
-# import turtle
-# import random
-# from math import *
-# from turtle import *
-# from time import sleep
-
-# from turtle import *
-# from random import *
-# from math import *
 
 def tree(n, l):
     pd()  # 下笔
@@ -89,8 +78,8 @@ def tree(n, l):
             t = heading()
             an = -40 + random() * 40
             setheading(an)
-            dis = int(800 * random() * 0.5 + 400 * random()
-                      * 0.3 + 200 * random() * 0.2)
+            dis = int(800 * random() * 0.5 + 400 * random() *
+                      0.3 + 200 * random() * 0.2)
             forward(dis)
             setheading(t)
 
